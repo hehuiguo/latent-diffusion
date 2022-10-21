@@ -739,3 +739,7 @@ if __name__ == "__main__":
             os.rename(logdir, dst)
         if trainer.global_rank == 0:
             print(trainer.profiler.summary())
+
+
+# python main.py --base configs/latent-diffusion/lsun_bedrooms-ldm-vq-4.yaml -t --gpus 0,1
+# python main.py --base configs/stable-diffusion/MSRA_AI4NFT.yaml -t --gpus 0,
